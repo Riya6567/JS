@@ -1,0 +1,33 @@
+<!-- Create a simple web application using HTML and JavaScript that allows users to input a number and display the factorial of the number when a button is clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <script>
+        function calculateFactorial(){
+            let num = parseInt(document.getElementById("num").value);
+            let result = factorial(num);
+            document.getElementById("result").innerText = `Factorial of ${num} is ${result}`;
+        }
+        function factorial(n){
+            if(n === 0 || n === 1){
+                return 1;
+            } else {
+                return n * factorial(n-1);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Factorial Calculator </h2>
+
+    <label for = "num"> Number : </label>
+    <input type = "number" id = "num" min = "0">  <br> <br>
+
+    <button onclick = "calculateFactorial()"> Factorial </button>
+    <p id = "result"></p>
+</body>
+</html>
