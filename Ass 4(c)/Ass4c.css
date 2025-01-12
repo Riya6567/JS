@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #333;
+}
+#contentArea {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.description {
+    color: #555;
+    margin: 10px 0;
+}
+.highlight {
+    background-color: yellow;
+}
+#outputArea {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#submitButton, #toggleButton {
+    cursor: pointer;
+    border-radius: 5px;
+}
