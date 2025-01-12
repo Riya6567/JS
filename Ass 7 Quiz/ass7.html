@@ -1,0 +1,33 @@
+<!-- Develop a quiz application that presents users with multiple-choice questions. The user should be able to select an answer for each question and submit their responses. The application should then display the user’s score. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="ass7.css">
+</head> 
+<body>
+    <h2> Quiz </h2>
+    <div id="quiz">
+        <div class="question">
+            <p> Question: 1 Which of the following is not javascript data types? </p>
+            <label><input type="radio" name="q1" value="Null Type"> Null type </label><br>
+            <label><input type="radio" name="q1" value="Undefined Type"> Undefined type </label><br>
+            <label><input type="radio" name="q1" value="Number Type"> Number type </label><br>
+            <label><input type="radio" name="q1" value="All of the mentioned"> All of the mentioned </label><br>
+        </div>
+        <div class="question">
+            <p> Question: 2 Which type of JavaScript Language is _______? </p>
+            <label><input type="radio" name="q2" value="Object-Oriented"> Object-Oriented </label><br>
+            <label><input type="radio" name="q2" value="Object-Based"> Object-Based </label><br>
+            <label><input type="radio" name="q2" value="Functional Programming"> Functional Programming </label><br>
+            <label><input type="radio" name="q2" value="All of the above"> All of the above </label><br>
+        </div>
+        <!-- Add more questions ...-->
+         <button onclick="submitQuiz()"> Submit Quiz</button>
+         <div id="result"></div>
+    </div>
+    <script src="ass7.js"></script>
+</body>
+</html>
