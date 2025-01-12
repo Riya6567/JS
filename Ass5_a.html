@@ -1,0 +1,31 @@
+<!-- Write a jquery code to toggle between slideup and slide down effects using ready function. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Slide Toggle Example </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #content {
+            width: 300px;
+            padding: 20px;
+            background-color: lightblue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id = "toggleButton"> Toggle Slide </button>
+    <div id = "content">
+        <p> This is the content that will be toggled with slide effect.</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#toggleButton").click(function(){
+                $("#content").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
