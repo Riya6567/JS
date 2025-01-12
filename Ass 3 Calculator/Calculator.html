@@ -1,0 +1,39 @@
+<!-- To create a simple calculator using HTML as a interactive web applications using JavaScript to handle events and perform calculations and styling with CSS. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/9710/9710545.png" type="image/x-icon">
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="Backspace()">C</button>
+            <button onclick="appendNumbers('%')">%</button>
+            <button onclick="appendNumbers('/')">/</button>
+            <button onclick="appendNumbers('7')">7</button>
+            <button onclick="appendNumbers('8')">8</button>
+            <button onclick="appendNumbers('9')">9</button>
+            <button onclick="appendNumbers('*')">*</button>
+            <button onclick="appendNumbers('4')">4</button>
+            <button onclick="appendNumbers('5')">5</button>
+            <button onclick="appendNumbers('6')">6</button>
+            <button onclick="appendNumbers('-')">-</button>
+            <button onclick="appendNumbers('1')">1</button>
+            <button onclick="appendNumbers('2')">2</button>
+            <button onclick="appendNumbers('3')">3</button>
+            <button onclick="appendNumbers('+')">+</button>
+            <button onclick="appendNumbers('00')">00</button>
+            <button onclick="appendNumbers('0')">0</button>
+            <button onclick="appendNumbers('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
